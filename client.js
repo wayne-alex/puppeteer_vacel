@@ -2,7 +2,7 @@ const fetch = require("node-fetch");
 
 async function search(query) {
   try {
-    const response = await fetch("http://localhost:3000/search", {
+    const response = await fetch("https://puppeteer-vacel.vercel.app/search", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -22,5 +22,5 @@ async function search(query) {
 }
 
 // Example usage
-const query = "Trump";
+const query = "Elon";
 search(query);

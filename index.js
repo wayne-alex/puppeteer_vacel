@@ -43,6 +43,10 @@ app.post("/search", async (req, res) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.send("<h3>The service is working as expected</h3>");
+});
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
